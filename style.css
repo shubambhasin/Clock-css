@@ -1,0 +1,98 @@
+.squareDiv
+{
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 620px;
+
+  font-size: x-large;
+    
+}
+
+.square {
+  border-radius: 50%;
+  border: 10px solid black;
+  width: 300px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 4px 80px, 
+  rgba(0, 0, 0, 0.02) 0 10px 100px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto 1fr auto ;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: ". twelve ." 
+                        "nine centre-dot three" 
+                        ". six .";
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+
+
+}
+
+.seconds
+{
+    background-color: crimson;
+    width: 3px;
+    height: 20%;
+    position: absolute;
+    left: calc(50% - 4px);
+    bottom: 50%;
+    border-radius: 5px;
+    transform-origin: bottom;
+    transform: rotateZ(240deg);
+}
+
+.hour
+{
+
+    background-color: black;
+    width: 4px;
+    height: 15%;
+    position: absolute;
+    left: calc(50% - 4px);
+    bottom: 50%;
+    border-radius: 50px;
+    transform-origin: bottom;
+    transform: rotateZ(20deg);
+
+}
+
+.minute
+{
+
+    
+    background-color: black;
+    width: 4px;
+    height: 18%;
+    position: absolute;
+    left: calc(50% - 4px);
+    bottom: 50%;
+    border-radius: 5px;
+    transform-origin: bottom;
+    transform: rotateZ(90deg);
+
+
+}
+.three
+{
+
+    grid-area: three;
+
+}
+.six
+{
+grid-area: six;
+}
+.nine
+{
+
+    grid-area: nine;
+
+}
+.twelve
+{
+    grid-area: twelve;
+
+}
